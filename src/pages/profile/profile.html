@@ -1,0 +1,95 @@
+<!--
+  Generated template for the ProfilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+  <ion-navbar color="hcolor">
+    <ion-buttons end>
+      <button ion-button icon-only (click)="addbuddy()">
+        <ion-icon name="md-add-circle"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="background text-col">
+  <!-- <ion-card>
+    <ion-card-content> -->
+  <div class="profile-image">
+    <img src="{{avatar}}" />
+  </div>
+  <div class="spacer" style="height: 10px;"></div>
+  <div>
+    <h2>{{displayName}}</h2>
+    <p style="color:grey;">#{{id}}</p>
+  </div>
+  <div>
+  </div>
+  <div>
+    <!--<h2 (click)="edittolerance()">{{tolerance}}</h2>-->
+  </div>
+  <div>
+    <ion-item>
+      <ion-range
+        pin="true"
+        min="0"
+        max="100"
+        [(ngModel)]="saturation"
+        color="dark"
+        (ionBlur)="updatetolerance($event)"
+      >
+        <ion-label range-left>0%</ion-label>
+        <ion-label range-right>100%</ion-label>
+      </ion-range>
+    </ion-item>
+    <p>Toxicity Tolerance: {{tolerance * 100}}%</p>
+    <!--  Tap on your pic or nick name to change it.-->
+  </div>
+  <div class="spacer" style="height: 10px;"></div>
+  <ion-row center>
+    <ion-col>
+      <button
+        class="text-1x"
+        ion-button
+        icon-start
+        block
+        color="primary"
+        tappable
+        (click)="editname()"
+      >
+        Edit Name
+      </button>
+    </ion-col>
+    <!-- <ion-col>
+      <button
+        class="text-1x"
+        ion-button
+        icon-start
+        block
+        color="primary"
+        tappable
+        (click)="editimage('https://firebasestorage.googleapis.com/v0/b/cleanchat-92927.appspot.com/o/female1.png?alt=media&token=ade7a9e5-27d3-4071-a0a5-134e10ae522b')"
+      >
+        Edit Avatar
+      </button>
+    </ion-col> -->
+    <ion-col>
+      <button
+        class="text-1x"
+        ion-button
+        icon-start
+        block
+        color="primary"
+        tappable
+        (click)="logout()"
+      >
+        Logout
+      </button>
+    </ion-col>
+  </ion-row>
+  <!-- </ion-card-content>
+  </ion-card> -->
+</ion-content>

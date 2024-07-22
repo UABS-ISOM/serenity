@@ -1,0 +1,7 @@
+{
+  "name": "cleanchat",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

@@ -1,0 +1,72 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content fullscreen class="animated fadeIn login auth-page background">
+  <div class="login-content">
+    <div padding-horizontal text-center class="animated fadeInDown">
+      <div class="logo"></div>
+      <h2 ion-text class="text-primary">
+        Welcome to Serenity.
+      </h2>
+    </div>
+    <div class="spacer" style="height: 5px;"></div>
+
+    <ion-card>
+      <ion-card-content>
+        <div class="spacer" style="height: 10px;"></div>
+        <ion-item class="text-1x">
+          <ion-input
+            type="email"
+            placeholder="Email"
+            [(ngModel)]="credentials.email"
+          ></ion-input>
+          <ion-icon name="mail" item-start class="text-primary"></ion-icon>
+        </ion-item>
+        <div class="spacer" style="height: 5px;"></div>
+        <ion-item class="text-1x">
+          <ion-input
+            type="password"
+            placeholder="Password"
+            [(ngModel)]="credentials.password"
+          ></ion-input>
+          <ion-icon name="lock" item-start class="text-primary"></ion-icon>
+        </ion-item>
+
+        <div>
+          <p
+            text-right
+            ion-text
+            color="primary"
+            tappable
+            (click)="passwordreset()"
+          >
+            <strong>Forgot Password?</strong>
+          </p>
+        </div>
+
+        <div class="spacer" style="height: 10px;"></div>
+        <button
+          class="text-1x"
+          ion-button
+          icon-start
+          block
+          color="primary"
+          tappable
+          (click)="signin()"
+        >
+          Login
+        </button>
+
+        <div text-center margin-top>
+          <span ion-text color="secondary" tappable (click)="signup()"
+            >New here? <strong>Sign up</strong></span
+          >
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

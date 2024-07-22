@@ -1,0 +1,30 @@
+<!-- Profile pictures: https://getavataaars.com/ -->
+
+<ion-header>
+  <ion-navbar color="hcolor"> </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar
+    [(ngModel)]="searchstring"
+    (input)="searchuser($event)"
+    placeholder="Add a new friend by #id"
+  ></ion-searchbar>
+  <ion-row center>
+    <ion-col text-center col-4 *ngFor="let key of filteredusers">
+      <ion-card>
+        <ion-card-header>
+          <ion-avatar item-left>
+            <img-loader src="{{key.photoURL}}" useImg></img-loader>
+          </ion-avatar>
+          <ion-card-title class="font">
+            {{key.displayName}}
+          </ion-card-title>
+        </ion-card-header>
+        <button class="btncolor" icon-only (click)="sendreq(key)">
+          <ion-icon name="md-add-circle"></ion-icon>
+        </button>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>
