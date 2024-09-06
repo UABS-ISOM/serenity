@@ -50,5 +50,3 @@ will rebuild and work properly.
 * Chat
 * Show the tolerance score of each message
 * Filter out any toxic messages based on tolerance level
-<<<<<<< HEAD
-=======
