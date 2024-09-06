@@ -1,6 +1,6 @@
 webpackJsonp([5],{
 
-/***/ 715:
+/***/ 712:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChatsPageModule", function() { return ChatsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__chats__ = __webpack_require__(724);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__chats__ = __webpack_require__(721);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var ChatsPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 724:
+/***/ 721:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -121,7 +121,7 @@ var ChatsPage = /** @class */ (function () {
     };
     ChatsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: "page-chats",template:/*ion-inline-start:"/Users/shohilkishore/Desktop/Work/Old/Johnny Chan/cyberbully-checker (latest working ios version)/src/pages/chats/chats.html"*/'<!--\n  Generated template for the ChatsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar color="hcolor">\n    <ion-buttons end>\n      <button ion-button icon-only (click)="addbuddy()">\n        <ion-icon name="md-add-circle"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-list>\n    <ion-list-header>\n      New Friend Requests\n    </ion-list-header>\n    <ion-item-sliding *ngFor="let item of myrequests">\n      <ion-item>\n        <ion-avatar item-left>\n          <img src="{{item.photoURL}}" />\n        </ion-avatar>\n        <h4 class="font">{{item.displayName}}</h4>\n      </ion-item>\n      <ion-item-options>\n        <button ion-button color="secondary" (click)="accept(item)">\n          <ion-icon name="checkmark"></ion-icon>\n          Add\n        </button>\n        <button ion-button color="danger" (click)="ignore(item)">\n          <ion-icon name="trash"></ion-icon>\n          Decline\n        </button>\n      </ion-item-options>\n    </ion-item-sliding>\n  </ion-list>\n  <ion-list-header>\n    Friends\n  </ion-list-header>\n  <ion-item *ngFor="let item of myfriends" (click)="buddychat(item)">\n    <ion-avatar item-left>\n      <img src="{{item.photoURL}}" />\n    </ion-avatar>\n    <h3 class="font inline">{{item.displayName}}</h3>\n    <p class="inline" item-right color=grey >{{item.tolerance * 100}}%</p>\n  </ion-item>\n</ion-content>\n'/*ion-inline-end:"/Users/shohilkishore/Desktop/Work/Old/Johnny Chan/cyberbully-checker (latest working ios version)/src/pages/chats/chats.html"*/,
+            selector: "page-chats",template:/*ion-inline-start:"/Users/shohilkishore/Desktop/Work/Johnny/serenity/src/pages/chats/chats.html"*/'<!--\n  Generated template for the ChatsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar color="hcolor">\n    <ion-buttons end>\n      <button ion-button icon-only (click)="addbuddy()">\n        <ion-icon name="md-add-circle"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-list>\n    <ion-list-header>\n      New Friend Requests\n    </ion-list-header>\n    <ion-item-sliding *ngFor="let item of myrequests">\n      <ion-item>\n        <ion-avatar item-left>\n          <img src="{{item.photoURL}}" />\n        </ion-avatar>\n        <h4 class="font">{{item.displayName}}</h4>\n      </ion-item>\n      <ion-item-options>\n        <button ion-button color="secondary" (click)="accept(item)">\n          <ion-icon name="checkmark"></ion-icon>\n          Add\n        </button>\n        <button ion-button color="danger" (click)="ignore(item)">\n          <ion-icon name="trash"></ion-icon>\n          Decline\n        </button>\n      </ion-item-options>\n    </ion-item-sliding>\n  </ion-list>\n  <ion-list-header>\n    Friends\n  </ion-list-header>\n  <ion-item *ngFor="let item of myfriends" (click)="buddychat(item)">\n    <ion-avatar item-left>\n      <img src="{{item.photoURL}}" />\n    </ion-avatar>\n    <h3 class="font inline">{{item.displayName}}</h3>\n    <p class="inline" item-right color=grey >{{item.tolerance * 100}}%</p>\n  </ion-item>\n</ion-content>\n'/*ion-inline-end:"/Users/shohilkishore/Desktop/Work/Johnny/serenity/src/pages/chats/chats.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */],

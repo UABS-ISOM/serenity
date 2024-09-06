@@ -67,7 +67,7 @@ var TabsPage = /** @class */ (function () {
     }
     TabsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-tabs',template:/*ion-inline-start:"/Users/shohilkishore/Desktop/Work/Old/Johnny Chan/cyberbully-checker (latest working ios version)/src/pages/tabs/tabs.html"*/'<ion-tabs color="hcolor">\n  <ion-tab [root]="tab1" tabTitle="Chat" tabIcon="md-chatbubbles"></ion-tab>\n  <ion-tab [root]="tab2" tabTitle="Profile" tabIcon="md-contact"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/shohilkishore/Desktop/Work/Old/Johnny Chan/cyberbully-checker (latest working ios version)/src/pages/tabs/tabs.html"*/,
+            selector: 'page-tabs',template:/*ion-inline-start:"/Users/shohilkishore/Desktop/Work/Johnny/serenity/src/pages/tabs/tabs.html"*/'<ion-tabs color="hcolor">\n  <ion-tab [root]="tab1" tabTitle="Chat" tabIcon="md-chatbubbles"></ion-tab>\n  <ion-tab [root]="tab2" tabTitle="Profile" tabIcon="md-contact"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/shohilkishore/Desktop/Work/Johnny/serenity/src/pages/tabs/tabs.html"*/,
         }),
         __metadata("design:paramtypes", [])
     ], TabsPage);

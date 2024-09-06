@@ -1,6 +1,6 @@
 webpackJsonp([8],{
 
-/***/ 710:
+/***/ 711:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BuddiesPageModule", function() { return BuddiesPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__buddies__ = __webpack_require__(719);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__buddies__ = __webpack_require__(720);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_image_loader__ = __webpack_require__(163);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -36,7 +36,7 @@ var BuddiesPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 719:
+/***/ 720:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -169,7 +169,7 @@ var BuddiesPage = /** @class */ (function () {
     };
     BuddiesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: "page-buddies",template:/*ion-inline-start:"/Users/shohilkishore/Desktop/Work/Old/Johnny Chan/cyberbully-checker (latest working ios version)/src/pages/buddies/buddies.html"*/'<!-- Profile pictures: https://getavataaars.com/ -->\n\n<ion-header>\n  <ion-navbar color="hcolor"> </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-searchbar\n    [(ngModel)]="searchstring"\n    (input)="searchuser($event)"\n    placeholder="Add a new friend by #id"\n  ></ion-searchbar>\n  <ion-row center>\n    <ion-col text-center col-4 *ngFor="let key of filteredusers">\n      <ion-card>\n        <ion-card-header>\n          <ion-avatar item-left>\n            <img-loader src="{{key.photoURL}}" useImg></img-loader>\n          </ion-avatar>\n          <ion-card-title class="font">\n            {{key.displayName}}\n          </ion-card-title>\n        </ion-card-header>\n        <button class="btncolor" icon-only (click)="sendreq(key)">\n          <ion-icon name="md-add-circle"></ion-icon>\n        </button>\n      </ion-card>\n    </ion-col>\n  </ion-row>\n</ion-content>\n'/*ion-inline-end:"/Users/shohilkishore/Desktop/Work/Old/Johnny Chan/cyberbully-checker (latest working ios version)/src/pages/buddies/buddies.html"*/,
+            selector: "page-buddies",template:/*ion-inline-start:"/Users/shohilkishore/Desktop/Work/Johnny/serenity/src/pages/buddies/buddies.html"*/'<!-- Profile pictures: https://getavataaars.com/ -->\n\n<ion-header>\n  <ion-navbar color="hcolor"> </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-searchbar\n    [(ngModel)]="searchstring"\n    (input)="searchuser($event)"\n    placeholder="Add a new friend by #id"\n  ></ion-searchbar>\n  <ion-row center>\n    <ion-col text-center col-4 *ngFor="let key of filteredusers">\n      <ion-card>\n        <ion-card-header>\n          <ion-avatar item-left>\n            <img-loader src="{{key.photoURL}}" useImg></img-loader>\n          </ion-avatar>\n          <ion-card-title class="font">\n            {{key.displayName}}\n          </ion-card-title>\n        </ion-card-header>\n        <button class="btncolor" icon-only (click)="sendreq(key)">\n          <ion-icon name="md-add-circle"></ion-icon>\n        </button>\n      </ion-card>\n    </ion-col>\n  </ion-row>\n</ion-content>\n'/*ion-inline-end:"/Users/shohilkishore/Desktop/Work/Johnny/serenity/src/pages/buddies/buddies.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */],
