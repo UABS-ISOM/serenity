@@ -26,11 +26,22 @@ Real-time chat integrated with toxicity filters
    
    If you encountered this bug, please delete the node_modules folder and then run 'npm install'
 
-### Build Serenity
+### Setup Serenity
 * Clone this project to your local repository
 * Run 'npm install'
+
+### Setup Firebase Realtime Database
+* Go to the Firebase Console to sign up for a free account: https://console.firebase.google.com/
+* Setup and select your project.
+* Navigate to the Realtime Database section.
+* Click on the three vertical dots in the top-right corner of the database and select “Import JSON”.
+* Upload the shared JSON file from 'db/export.json'
+* Click on the “Rules” tab.
+* Upload the shared JSON file from 'db/rules.json'
 * Add credentials to 'app.firebaseconfig.ts'
-* Go into the project folder, type: ionic serve
+
+### Start Serenity
+* Go into the project folder and type: ionic serve
 * Follow the instructions in the CMD window and install all the dependencies 
 
 ### Test Serenity
